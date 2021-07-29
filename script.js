@@ -1,6 +1,5 @@
 var elem = document.documentElement;
 
-openFullscreen();
 
 /* View in fullscreen */
 function openFullscreen() {
