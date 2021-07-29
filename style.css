@@ -12,3 +12,8 @@ nav h2{
     margin: 0;
     color: white;
 }
+
+.content{
+    width: 100%;
+    background: red;
+}
