@@ -1,24 +1,12 @@
-var elem = document.documentElement;
-
-
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
+const modalcontainer= document.getElementById("modal-container");
+function openModal(){
+  modalcontainer.hidden=false;
+  document.documentElement.style.position='fixed';
+  document.documentElement.style.height="100%";
 }
 
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-    document.msExitFullscreen();
-  }
+function closeModal(){
+  modalcontainer.hidden=true;
+  document.documentElement.style.position='';
+  document.documentElement.style.height='';
 }
